@@ -4,4 +4,4 @@
 
 - [ ] Release training code
 - [ ] Release evaluation code
-- [ ] Demo code
+- [ ] Demo code (By 28.07.26)
