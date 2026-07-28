@@ -4,4 +4,4 @@
 - [ ] Sharing of Model weights
 - [ ] Release training code
 - [ ] Release evaluation code
-- [ ] Demo code (By 28.07.26)
+- [x] Demo inference code (By 28.07.26)
