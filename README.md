@@ -1,6 +1,7 @@
 # UADF
 
-![Uploading comparison.png…]()
+<img width="1890" height="1017" alt="comparison" src="https://github.com/user-attachments/assets/03170708-e758-483a-91b8-7c81af71f266" />
+
 
 ## 🗺️ Roadmap
 - [ ] Sharing of Model weights
