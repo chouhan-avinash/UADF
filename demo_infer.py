@@ -17,7 +17,12 @@ from dif_wrapper import DDIMSampler
 
 device = "cuda"
 
+import argparse
 
+parser = argparse.ArgumentParser(description="UADF OpenSR Demo Inference")
+parser.add_argument("input", help="Input GeoTIFF")
+parser.add_argument("output", help="Output PNG")
+args = parser.parse_args()
 
 denoiser = torch.jit.load(
     "/uadf_export/osr_denoiser_512.pt",
@@ -25,7 +30,10 @@ denoiser = torch.jit.load(
 )
 
 
-test_new = torch.jit.load("/uadf_export/osr_denoiser_step1_512.pt")
+test_new = torch.jit.load("/uadf_export/osr_denoiser_step1_512.pt", map_location=device)
+denoiser.eval()
+test_new.eval()
+
 print(denoiser)
 sampler = DDIMSampler(
     denoiser,
@@ -40,7 +48,7 @@ import rioxarray as rxr
 import torch
 
 # Read GeoTIFF
-img = rxr.open_rasterio("/lr/LR__ROI_00026__20200730T110619_20200730T111530_T30TUM.tif").values.astype("float32")
+img = rxr.open_rasterio(args.input).values.astype("float32")
 img = img[[3, 2, 1]]
 
 tensor = torch.from_numpy(img) / 10000.0
@@ -64,4 +72,5 @@ with torch.no_grad():
 
 sr = sr.clamp(0, 1)
 
-T.ToPILImage()(sr[0].cpu()).save("sr_512_both.png")
+T.ToPILImage()(sr[0].cpu()).save(args.output)
+
