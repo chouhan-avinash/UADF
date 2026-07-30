@@ -16,7 +16,7 @@ import torch
 import torchvision.transforms as T
 from PIL import Image
 import torch.nn.functional as F
-from diffusion_wrapper import DDIMSampler
+from dif_wrapper import DDIMSampler
 
 device = "cuda"
 
