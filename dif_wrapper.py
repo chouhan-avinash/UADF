@@ -1,3 +1,16 @@
+"""
+UADF OpenSR Demo Inference
+
+Author:
+    Dr. Avinash Chouhan
+    North Eastern Space Applications Centre (NESAC)
+
+GitHub:
+    https://github.com/chouhan-avinash/UADF
+    
+Copyright (c) 2026
+Licensed under the MIT License.
+"""
 import torch
 import numpy as np
 
