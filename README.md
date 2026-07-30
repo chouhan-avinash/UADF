@@ -1,6 +1,7 @@
 # UADF
 ## Run
-python demo_infer.py input.tif output.png
+1. Download model weights for demo inference : [Link](https://drive.google.com/drive/folders/1rk4RTea6awTWRLE9MiayxkLImqlU0ZhA)
+2. python demo_infer.py input.tif output.png
 ## 🗺️ Roadmap
 - [ ] Sharing of Model weights
 - [ ] Release training code
