@@ -1,5 +1,5 @@
 """
-OpenSR Demo Inference
+UADF OpenSR Demo Inference
 
 Author:
     Dr. Avinash Chouhan
