@@ -7,9 +7,6 @@ Author:
 
 GitHub:
     https://github.com/chouhan-avinash/UADF
-    
-Copyright (c) 2026
-Licensed under the MIT License.
 """
 import torch
 import numpy as np
