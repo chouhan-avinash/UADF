@@ -1,6 +1,6 @@
 # UADF
-Run
-python infer.py input.tif output.png
+## Run
+python demo_infer.py input.tif output.png
 ## 🗺️ Roadmap
 - [ ] Sharing of Model weights
 - [ ] Release training code
