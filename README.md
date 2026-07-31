@@ -1,9 +1,10 @@
 # UADF
 
 ## 🗺️ Roadmap
-- [ ] Sharing of Model weights
+- [ ] Sharing of Model weights for all datasets
 - [ ] Release training code
-- [x] Release evaluation code 
+- [x] Release evaluation code
+- [x] Sharing of model weights for Demo inference
 - [x] Demo inference code
 
 ## Run
