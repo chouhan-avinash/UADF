@@ -3,8 +3,8 @@
 ## 🗺️ Roadmap
 - [ ] Sharing of Model weights
 - [ ] Release training code
-- [ ] Release evaluation code (By 07.08.26)
-- [x] Demo inference code (By 29.07.26)
+- [x] Release evaluation code 
+- [x] Demo inference code
 
 ## Run
 1. Download model weights for demo inference : [Link](https://drive.google.com/drive/folders/1rk4RTea6awTWRLE9MiayxkLImqlU0ZhA)
